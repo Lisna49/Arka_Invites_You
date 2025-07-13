@@ -635,12 +635,37 @@ height: 115px;
   left: 0;
   width: 155px;
   height: auto;
+}.teks-sedang {
+  font-size: 18px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: normal;
+  margin: 0; /* 🧲 tanpa jarak */
+  line-height: 1.2;
 }
+
+.teks-besar {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  margin: 0; /* 🧲 super nempel */
+  line-height: 1.1;
+}
+
+.teks-sedang-besar {
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  margin: 0; /* 🧲 nempel total */
+  line-height: 1.1;
+}
+
+
 
   </style>
 </head>
 <!-- Tombol Mute/Unmute -->
-<button id="mute-button" onclick="toggleMute()" style="position: fixed; bottom: 20px; right: 20px; background-color: #5d4037; color: white; padding: 10px 15px; border-radius: 50%; border: none; cursor: pointer; font-size: 18px;">
+<button id="mute-button" onclick="toggleMute()" style="z-index:5;position: fixed; bottom: 20px; right: 20px; background-color: #5d4037; color: white; padding: 10px 15px; border-radius: 50%; border: none; cursor: pointer; font-size: 18px;">
   🔊
 </button>
 
@@ -650,7 +675,6 @@ height: 115px;
       <div class="circle-img">
         <img src="assets/foto/profile.jpg" alt="Foto Anak" />
       </div>
-      <div class="nama">Kepada Yth. Bapak/Ibu</div>
       <div class="tanggal">~ 28 Juli 2025 ~</div>
       <button class="btn" onclick="bukaUndangan()">📩 Buka Undangan</button>
     </div>
@@ -663,11 +687,11 @@ height: 115px;
   <img src="assets/gambar/monyet.svg" alt="Hiasan Atas" class="hiasan-daun" />
 
   <div class="jungle-box">
-    <img src="assets/foto/profile3.gif" alt="GIF Anak" class="full-gif" />
-    <h2 class="welcome">Welcome</h2>
-    <h1 class="umur">ARKA</h1>
-    <h1 class="umur">IS TURNING</h1>
-    <h2 class="nama-acara">1</h2>
+    <img src="assets/foto/profile4.gif" alt="GIF Anak" class="full-gif" />
+    <h2 class="welcome teks-sedang">Welcome to</h2>
+    <h1 class="umur teks-besar">Arka</h1>
+    <h2 class="welcome teks-sedang">Is Turning</h2>
+    <h1 class="umur teks-sedang-besar">1 th</h1>    
   </div>
 
   <div class="hewan-wrapper">
@@ -801,7 +825,7 @@ height: 115px;
     </div>
   </div>
 </section>
-<audio id="bg-music" src="assets/audio/audio.mp3" autoplay loop></audio>
+<audio id="bg-music" src="assets/audio/audio2.mp3" autoplay loop></audio>
 <!-- Lightbox2 JS -->
 <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
 
